@@ -6,5 +6,8 @@ git add "."(todos os arquivos) // "nome do arquivo" = coloca o arquivo na "fila 
 
 git status = retorna os arquivos mostrando quais foram ou não commitados
 
+git commit = commita as mudanças, caso deixado em branco abrira um VIM para que sejá escrita a mensagem de commit (DICA: esc,esc sai do modo de edição, :w salva e :q sai, :wq salva e sai)
 
+git push = coloca os arquivos commitados no repositorio
 
+adicionar git a um repositorio existente 
