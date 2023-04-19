@@ -6,8 +6,21 @@ git add "."(todos os arquivos) // "nome do arquivo" = coloca o arquivo na "fila 
 
 git status = retorna os arquivos mostrando quais foram ou não commitados
 
-git commit = commita as mudanças, caso deixado em branco abrira um VIM para que sejá escrita a mensagem de commit (DICA: esc,esc sai do modo de edição, :w salva e :q sai, :wq salva e sai)
+git commit = commita as mudanças,(-m "mensgem do commit"  para adicionar diretamente por linha de comando a mensagem) caso deixado em branco abrira um VIM para que sejá escrita a mensagem de commit (DICA: esc,esc sai do modo de edição, :w salva e :q sai, :wq salva e sai)
+
+git reset HEAD "nome do arquivo" = retira o arquivo de staged
+
+git checkout -- "nome do arquivo" = desfaz alterações do arquivo
 
 git push = coloca os arquivos commitados no repositorio
+(caso coloado a origem "git pull/push origin "nome da branch" ele fará isso pela ou na brach informada)
 
-adicionar git a um repositorio existente 
+git clone "link do repositorio" = cria na pasta em que o comando for rodado os arquivos do repositorio
+
+git pull = pega os arquivos que estão no repositorio do github e aplica ao projeto
+(caso coloado a origem "git pull/push origin "nome da branch" ele fará isso pela ou na brach informada)
+trabalhando em um projeto com varios dev é sempre bom dar pull com frequencia para que não fique com o aruivo desatualizado sem as modificações feita por outros
+
+rm -rf .git = feito na pasta do projeto, exclui todos os traços do GIT no projeto.
+
+
