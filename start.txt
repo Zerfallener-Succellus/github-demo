@@ -1,1 +1,10 @@
 Teste Git Quick Start demo
+
+git init "" = inicia um repositorio novo
+
+git add "."(todos os arquivos) // "nome do arquivo" = coloca o arquivo na "fila de commit"
+
+git status = retorna os arquivos mostrando quais foram ou não commitados
+
+
+
