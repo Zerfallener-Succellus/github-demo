@@ -2,9 +2,10 @@ Teste Git Quick Start demo
 
 git init "" = inicia um repositorio novo
 
-git add "."(todos os arquivos) // "nome do arquivo" = coloca o arquivo na "fila de commit"
+git add "."(todos os arquivos) // "-A"(arquivos que foram modificados,movidos,ou excluidos)// "nome do arquivo" = coloca o arquivo na "fila de commit"
 
 git status = retorna os arquivos mostrando quais foram ou não commitados
+sempre que um arquivo é editado seu etado muda e passa a ser "editado" nessecitando add ele novamente para ser commitado
 
 git commit = commita as mudanças,(-m "mensgem do commit"  para adicionar diretamente por linha de comando a mensagem) caso deixado em branco abrira um VIM para que sejá escrita a mensagem de commit (DICA: esc,esc sai do modo de edição, :w salva e :q sai, :wq salva e sai)
 
@@ -23,4 +24,12 @@ trabalhando em um projeto com varios dev é sempre bom dar pull com frequencia p
 
 rm -rf .git = feito na pasta do projeto, exclui todos os traços do GIT no projeto.
 
+git mv "nome atual do arquivo" "novo nome do arquivo" = renomeia o arquivo diretamente pelo git
 
+git mv "nome do arquivo" "diretorio ao qual deve ser movido" = move o arquivo de pasta diretamente pelo git
+ 
+ git rm "nome do arquiv" = deleta arquivo QUE JÁ FOI ADICIONADO ao git (caso não tenha sido pode se usar comando do temrinal msm)
+
+ git log = mostra todas as modificações em ordem cronologica
+
+ para ignorar um arquivo da verificação do git caso não queiro coloca-lo no repostitorio é só por o nome diretorio/arquivo no gitignore
